@@ -1,0 +1,57 @@
+<ion-header>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  <ion-toolbar color="tertiary">
+    <ion-buttons color="dark" slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center-container">
+    <ion-icon  routerLink="/e404" class="shield-icon" color="tertiary" name="shield-outline"></ion-icon>
+    <ion-text color="primary">
+        <h1><strong>Admin</strong>App</h1>
+    </ion-text>
+</div>
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>
+  <ion-card-content>
+    <form [formGroup]="formularioLogin">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input formControlName="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formControlName="contraseña" type="password"></ion-input>
+      </ion-item>
+    </form>
+    <br>
+    <ion-button (click)="ingresar()" color="tertiary" mode="ios" expand="block"  shape="round">
+      Ingresar
+      <ion-icon slot="end" name="log-in-outline"></ion-icon>
+    </ion-button>
+    <ion-button  color="primary" mode="ios" expand="block"  shape="round" routerLink="/forgot-password">
+      ¿Olvido su contraseña?
+      <ion-icon slot="end" name="log-in-outline"></ion-icon>
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="tertiary">
+   <ion-buttons  slot="end">
+    <ion-button  mode="ios" [routerLink]="['/registro']"  >
+      Registrarse
+      <ion-icon slot="end" name="person-add-outline"></ion-icon>
+    </ion-button>
+   </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

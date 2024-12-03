@@ -1,0 +1,17 @@
+.center-container {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: none; /* Asegura que ocupe toda la altura de la vista */
+}
+
+.shield-icon {
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center; /* Alinear el texto en el centro */
+}

@@ -1,0 +1,23 @@
+.ion-padding {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Coloca la imagen en la parte superior */
+    flex-direction: column;
+    width: 100%;
+    max-width: 50%; /* Asegura que la imagen ocupe todo el ancho permitido */
+    margin: 20px auto 0 auto; /* Margen superior opcional para darle separación */
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  

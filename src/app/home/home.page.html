@@ -1,0 +1,21 @@
+<ion-header>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  <ion-toolbar color="tertiary">
+    <ion-title>Página de Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="onLogout()" mode="ios">Cerrar Sesión</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1 id="welcome">Bienvenido,{{username}}</h1>
+  <ion-button color="tertiary" expand="full" routerLink="/maps">Ver mapa</ion-button>
+</ion-content>
+<div>
+  <ion-text class="text" color="primary">
+    <h1 class="inter"><strong>Admin</strong>App</h1>
+    </ion-text>
+  <ion-icon class="shield-icon" color="tertiary" name="shield-outline"></ion-icon>
+</div>
+<ion-button color="tertiary" expand="full" routerLink="/scan">Escanear Código QR</ion-button>

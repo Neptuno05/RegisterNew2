@@ -1,0 +1,18 @@
+<ion-header >
+  <mat-progress-bar mode="query"></mat-progress-bar>
+  <ion-toolbar color="tertiary">
+    <ion-buttons color="dark" slot="start">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Página no Encontrada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <img  class="ion-padding" src="../../assets/images/e404.svg" alt="">
+
+  <ion-button routerLink="/login" color="tertiary" mode="ios" expand="block"  shape="round">
+    Volver Al login
+    <ion-icon slot="end" name="skull-outline" color="dark"></ion-icon>
+  </ion-button>
+</ion-content>
