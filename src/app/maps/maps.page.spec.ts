@@ -17,7 +17,7 @@ describe('MapsPage', () => {
         },
         event: {
           addListenerOnce: jasmine.createSpy('addListenerOnce').and.callFake((map, event, callback) => {
-            callback();
+            callback(event,map);
           }),
         },
       },
